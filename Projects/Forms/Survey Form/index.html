@@ -1,0 +1,283 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Survey Form</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+  :root {
+    --color-white: #f3f3f3;
+    --color-darkblue: #1b1b32;
+    --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+    --color-green: #37af65;
+  }
+
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+  
+body{
+
+    font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        115deg,
+        rgba(58, 58, 158, 0.8),
+        rgba(136, 136, 206, 0.7)
+      ),
+      url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  } */
+
+
+  body{
+    background: var(--color-darkblue);
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    
+
+  }
+
+  
+.container{
+    max-width: 50%;
+margin-left: 30%;
+margin-top: 25px;
+
+
+}
+
+
+
+
+
+
+h1, p{
+    text-align: center;
+    margin-top: 20px;
+}
+#survey-form{
+display: block;
+margin-top: 20px;
+justify-content: center;
+background: var(--color-darkblue-alpha);
+padding-left: 9%;
+margin-top: 5%;
+
+
+}
+
+#description{
+    margin-top: 10px;
+}
+
+
+
+
+#survey-form2{
+    margin-left: 44%;
+justify-content: center;
+
+
+}
+
+#name-form input{
+    width: 80%;
+    height: 30px;
+    margin: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
+
+#email-form input{
+    width: 80%;
+    height: 30px;
+    margin: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
+
+#number-form input{
+    width: 80%;
+    height: 30px;
+    margin: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+#name-label, #email-label, #number-label{
+    padding-left: 4%;
+    margin-top:15%;
+}
+
+
+
+
+#role{
+    padding-left: 4%;
+    margin-top:15%;
+}
+
+
+#dropdown{
+
+    width: 80%;
+    height: 30px;
+    margin: 10px 10px 10px 30px;
+    border-radius: 5px;
+}
+
+
+#recommend{
+
+
+    padding-left: 4%;
+    margin-top:15%;
+    
+}
+#radio1, #radio2{
+    margin: 30px 10px 10px 30px;
+}
+
+
+.feature{
+
+    padding-left: 4%;
+    margin-top:4%;
+   
+}
+
+
+.feature label input{
+    margin-top: 10px;
+}
+
+
+
+
+.textarea{
+    margin: 10px 10px 10px 30px;
+}
+
+#text{
+    margin-top: 10px;
+    width: 40vw;
+    height: 20vh;
+}
+
+#submit{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40vw;
+    height: 5vh;
+    background: var(--color-green);
+    border-radius: 5px;
+}
+    </style>
+    </head>
+
+    <body>
+        
+
+            
+        
+      <h1 id="title">Survey Form</h1>
+      <p id="description"> Thank you for taking the time to help us improve the platform</p>
+      <div class="container">
+        <div class="box">
+
+
+<label id="name-label">Name </label><br>
+      <form class="form" id="name-form"><input id="name" type="text" placeholder="Enter name" required></form>
+      </form>
+      
+      <label id="email-label">Email </label><br>
+      <form  class="form" id="email-form"><input id="email" type="email" placeholder="Enter email" required></form>
+
+      <label id="number-label">Age </label><br>
+      <form  class="form" id="number-form"><input id="number" type="number" min="18" max="120" placeholder="Enter age" required></form>
+      </form>
+
+
+<form id="role-form">
+    <label id="role"> Which option best describes your current role?</label><br>
+      <select id="dropdown" title="dropdown">
+        <option>Student</option>
+        <option> Working Professional</option>
+        <option> Freelancer</option>
+        <option> Entrepreneur</option>
+        <option>Other<br></option>
+        </select>
+        </form><br>
+
+        <form id="recommend-form2">
+
+        <label id="recommend"> Would you recommend freecodecamp to your Friends?</label><br>
+        <label id="radio1">Definitely  <input  type="radio" value="Definitely" name="radio"></label><br>
+          <label id="radio2"> Not sure <input  type="radio" value="Not Sure" name="radio"></label><br>
+
+
+
+          <div class="feature">
+            <label>What is your favourite feature of freecodecamp?</label><br>
+            <label><input type="checkbox" value="Challenges" name="checkbox" id="label-1"> Challenges</label><br>
+            <label><input type="checkbox" value="Open Source" name="checkbox" id="label-2"> Open Source</label><br>
+            <label><input type="checkbox" value="Community" name="checkbox" id="label-3"> Community</label><br>
+              <label><input type="checkbox" value="Meetups" name="checkbox" id="label-4"> Meetups</label><br>
+              <label><input type="checkbox" value="Projects" name="checkbox" id="label-5"> Projects</label><br>
+
+              <label><input type="checkbox" value="Videos" name="checkbox" id="label-6"> Videos</label><br>
+
+</div>
+
+<div class="textarea">
+<label> Any Comments or Suggestions?</label><br>
+<textarea id="text" title="textarea"></textarea><br>
+<input id="submit" value="Submit" type="submit">
+</form>
+</div>
+
+      
+      </div>
+      </div>
+      
+      </body>

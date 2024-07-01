@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.box{
+    height: 140px;
+    width: 140px;
+    background-color: red;
+    margin: 5px;
+    animation-name: boxAnimation1;  /*name of the animation*/
+    animation-duration: 5s;    /*total animation takes to complete*/
+}
+
+/* single durations */
+@keyframes boxAnimation1{
+    from{background-color: red;}
+    to{background-color: aqua;}
+}
+
+
+.box2{
+    height: 140px;
+    width: 140px;
+    background-color: rgb(43, 0, 255);
+    margin: 5px;
+    animation-name: boxAnimation2;
+    animation-duration: 5s;
+}
+
+/* different duration */
+@keyframes boxAnimation2{
+    0%{background-color: rgb(64, 255, 0);}
+    25%{width:100px;}
+    50%{height:100px;}
+    100%{
+        margin:20px;
+        background-color: rgb(64, 255, 0);
+        }
+ }
+
+
+ .box3{
+    height: 140px;
+    width: 140px;
+    position: relative;
+    background-color: rgb(186, 122, 255);
+    margin: 5px;
+    animation-name: boxAnimation3; 
+    animation-duration: 5s;  
+    animation-delay: 2s;    /*animation will start after this time*/
+    /*animation-delay: -2s;    animation will start as it has been held for 2s*/
+    animation-iteration-count: 4; /*how many times animation should run*/
+    /* animation-iteration-count: infinite; animation will run always*/
+}
+
+/* changing position */
+@keyframes boxAnimation3{
+    0%{top:0px; left:0px;}
+    25%{top:0px; left:200px;}
+    50%{top:200px; left:200px;}
+    75%{top:200px; left:0px;}
+    100%{top:0px; left:0px;}
+ }
+
+ .box4{
+    height: 140px;
+    width: 140px;
+    background-color: rgb(43, 0, 255);
+    margin: 5px;
+    animation-name: boxAnimation4;
+    animation-duration: 5s;
+}
+
+@keyframes boxAnimation4 {
+    100%{transform: rotate(90deg);}
+}

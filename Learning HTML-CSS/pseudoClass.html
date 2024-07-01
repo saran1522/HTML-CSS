@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pseudo class page</title>
+</head>
+<style>
+    .divClass {
+        border: 2px solid #db00b9;
+        border-radius: 40px;
+        width: 600px;
+        margin: 20px auto;
+        align-items: center;
+        padding: 30px;
+        font-family: "Arial Narrow Bold", sans-serif;
+        background-color: #ffb7d9;
+        text-align: left;
+        text-rendering: geometricPrecision;
+        letter-spacing: 1px;
+    }
+
+    .aClass {
+        cursor: pointer;
+        background-color: #ffb7d9;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+    }
+
+    .aClass:hover {
+        /*what will happen on hover on every element of aClass*/
+        color: rgb(56, 17, 232);
+        background-color: rgb(252, 254, 255);
+        border: 4px solid;
+    }
+
+    #btn {
+        border-radius: 60px;
+    }
+
+    a {
+        /*links CSS*/
+        text-decoration: none;
+    }
+
+    /* like hover we also have :active and :visited selectors which designs what will happen if link is visited and on the moment we click it(active)*/
+</style>
+
+<body>
+    <div class="divClass">
+        <h3 style="text-align: center">Psudo selectors</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nulla
+            excepturi aque quod earum vero debitis facere ad necessitatibus animi
+            odit et dolorem, quos quis asperiores molestiae? Aut tempora corrupti
+            amet voluptas, corporis magnam at odit aperiam esse dolorum laudantium
+            tenetur magni voluptatem facere, odio possimus velit error ratione
+            omnis? Itaque consectetur corporis fugit quasi nihil sapiente, earum
+            quos inventore aliquam cumque pariatur accusamus voluptatibus, vero
+            dolore magni facere molestias, neque non modi ipsum! Fugiat unde impedit
+            facere, exercitationem consequatur nostrum commodi nobis neque
+            necessitatibus ipsa tempora saepe temporibus eligendi ducimus ratione?
+            Modi facilis, officia illum alias at error repellendus molestias maiores
+            ab vero sapiente autem unde? Exercitationem magnam nisi iste est dolorum
+            nemo ipsum maxime eveniet optio veniam? Officia sapiente aut sit
+            voluptas, id dolores distinctio in enim veritatis minus fugit quos
+            deleniti consequuntur corporis doloribus suscipit vero voluptatum
+            laborum pariatur? Sunt animi ut non. Vel ex sunt distinctio quisquam
+            unde, maxime consequatur! Unde beatae, provident quos ipsam dolores
+            asperiores sint. Explicabo, consequatur quia.
+        </p>
+        <a href="http://www.google.com" target="_blank" class="aClass">click me</a>
+        <button id="btn" class="aClass">contect us</button>
+    </div>
+</body>
+
+</html>

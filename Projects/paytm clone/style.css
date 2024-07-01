@@ -1,0 +1,950 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/**scroll bar styling**/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(70, 172, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.head {
+    height: 110px;
+    width: 100%;
+}
+
+/* logo */
+nav img {
+    height: 40px;
+    margin: 8px 0px 8px 57px;
+}
+
+/* Navigation bar div */
+.nav-container {
+    width: 100%;
+    height: 57px;
+}
+
+/* navigation bar */
+.navbar {
+    width: 100%;
+    height: 57px;
+    background-color: white;
+    box-shadow: 0px 2px 5px 2px rgba(233, 227, 227, 0.656);
+    z-index: 1;
+    position: fixed;
+}
+
+.manue-line {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 15px;
+}
+
+.navbar span {
+    display: block;
+    height: 0.1px;
+    width: 18px;
+    margin: 6px;
+    color: black;
+    background-color: black;
+}
+
+/* login button */
+.nav-btn {
+    float: right;
+    height: 35px;
+    width: 83px;
+    background-color: rgb(31, 188, 255);
+    margin: 12px 22px;
+    border: none;
+    border-radius: 16px;
+    color: white;
+    font-size: 10px;
+    padding-right: 30px;
+}
+
+/* image of login button */
+.nav-btn img {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    height: 32px;
+}
+
+/* Bar below Nav Bar */
+.nav-back {
+    background-color: rgb(246, 246, 246);
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    position: relative;
+    top: 60px;
+    z-index: -1;
+}
+
+/* Tag line elements one by one */
+#no-wallet {
+    font-weight: 600;
+}
+
+#imoji {
+    font-size: 25px;
+}
+
+#learn-more {
+    font-weight: 700;
+}
+
+.home {
+    display: flex;
+}
+
+/* Left section of home window */
+.main-left {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 43vw;
+    margin-right: 70px;
+}
+
+/* Paytm logo on home section */
+.main-side-image img {
+    height: 80px;
+    width: 80px;
+    margin: 130px 0px 45px 0px;
+    box-shadow: 0px 0px 20px rgb(241, 236, 236);
+    border-radius: 10px;
+}
+
+/* heading of home section  */
+.home-heading h1 {
+    font-size: 55px;
+}
+
+/* Intro paragraph of home section */
+.home-intro p {
+    width: 40vw;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+/* Download app button */
+.black-btn button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 46px;
+    width: 62%;
+    background-color: black;
+    border-radius: 50px;
+    margin: 40px 0px 10px 0px;
+    color: white;
+    font-size: 14px;
+    padding-left: 11px;
+    padding-right: 11px;
+    cursor: pointer;
+}
+
+.black-btn p {
+    font-weight: 400;
+}
+
+/* icons of download button */
+.black-btn img {
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+}
+
+.black-btn button:hover {
+    filter: invert(100%);
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.home-btn button {
+    width: 250px;
+}
+
+/* Left section of home window */
+.main-right {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 45vw;
+    margin-left: 70px;
+}
+
+/* Mobile image of right home section */
+.main-right img {
+    float: right;
+    height: 500px;
+    width: 525px;
+    margin-top: 150px;
+}
+
+/* Reacharge & pay bill seciton  */
+.rech_pay {
+    height: 380px;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    background-color: rgb(0, 186, 242);
+}
+
+
+/* Book and Buy section */
+.book_buy {
+    height: 380px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(15, 74, 138);
+}
+
+.book_buy h1,
+.rech_pay h1 {
+    font-size: 36px;
+    margin-top: 65px;
+}
+
+/* services blocks-container on book and but & recharge and pay bilss sections  */
+.services-container {
+    height: 380px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-top: -40px;
+}
+
+/* each block of services section */
+.services {
+    height: 180px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 16px 11px 16px 16px;
+    cursor: pointer;
+    line-height: 22px;
+}
+
+/* imgae of services */
+.services img {
+    width: 65px;
+}
+
+
+/* paragraph of services block */
+.services p {
+    margin-top: 10px;
+    width: 10px;
+}
+
+.instrument {
+    height: 200px;
+    width: 100%;
+    background-color: #f5f7fa;
+    padding-top: 110px;
+    padding-left: 6px;
+}
+
+.instrument h1 {
+    font-size: 48px;
+}
+
+/* all sections with image on right and information on left */
+.section-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* left divs of all information sections */
+.section-left-div {
+    font-family: sans-serif;
+    width: 37vw;
+    margin-left: 90px;
+    padding: 130px 30px;
+}
+
+/* div for image and para of left div of information seciton */
+.section-side-image {
+    margin: 0px 0px 45px 0px;
+    display: flex;
+}
+
+/* service-name with image */
+.section-side-image p {
+    margin: 20px 0px 0px 10px;
+    font-weight: 700;
+    width: 85px;
+}
+
+
+/* service logo on left div of sections */
+.section-side-image img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+/* heading of left div of sections  */
+.section-heading h1 {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+/* Intro paragraph of sections */
+.section-intro p {
+    width: 450px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+/* Left div of sections */
+.section-right-div {
+    font-family: sans-serif;
+    margin-left: 60px;
+}
+
+/* Image of right div in sections */
+.section-right-div img {
+    width: 540px;
+    margin-top: 78px;
+    margin-right: 50px;
+}
+
+.UPI_transfer-left {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+/* side image of UPI postpaid section */
+.postpaid-side-image img {
+    height: 77px;
+    width: 180px;
+}
+
+/* right div image of postpaid section */
+.postpaid-right img {
+    width: 433px;
+}
+
+/* gap between 2 sections  */
+.section-gap {
+    height: 50px;
+    background-color: #f5f7fa;
+}
+
+/* Banking section */
+.bank {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7fa;
+    height: 850px;
+}
+
+/* left and right divs of banking section */
+.bank-left,
+.bank-right {
+    height: 713px;
+    border-radius: 20px;
+    padding: 70px 60px;
+    margin-right: 40px;
+    background-color: white;
+}
+
+
+.bank-left img {
+    width: 200px;
+    height: 75px;
+}
+
+.bank-right img {
+    width: 200px;
+    height: 20px;
+    margin-top: 48px;
+}
+
+.bank h1 {
+    padding-top: 28px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.bank p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+/* bank cards images */
+.card img {
+    height: 300px;
+    width: 450px;
+    margin-top: 70px;
+}
+
+.paybank_heading h1 {
+    font-size: 48px;
+    margin-left: 6px;
+    margin-top: 120px;
+}
+
+.pb_and_in {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    height: 585px;
+}
+
+/* Left section of home window */
+.pb_and_in-left {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 40vw;
+    margin: 35px 0px 0px 6px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Paytm logo on home section */
+.pb_and_in-side-image img {
+    height: 35px;
+    width: 210px;
+    border-radius: 0px;
+}
+
+/* heading of home section  */
+.pb_and_in-heading h1 {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+/* Intro paragraph of home section */
+.pb_and_in-intro p {
+    line-height: 30px;
+    padding-top: 12px;
+    display: block;
+    width: 520px;
+    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+/* Download app button */
+.blue-btn button {
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    margin: 40px 0px 10px 0px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding-right: 30px;
+    background-color: #082665;
+    cursor: pointer;
+}
+
+/* icons of download button */
+.blue-btn img {
+    height: 16px;
+    width: 20px;
+    position: relative;
+    right: 45px;
+    top: 2px;
+    filter: invert(100%);
+    cursor: pointer;
+}
+
+.blue-btn button:hover {
+    background-color: #00baf2;
+    transition: 0.3s;
+}
+
+/* Left section of home window */
+.pb_and_in-right {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 45vw;
+}
+
+/* Mobile image of right home section */
+.pb_and_in-right img {
+    margin-left: 80px;
+    width: 452px;
+    z-index: 1;
+}
+
+.insurance .pb_and_in-side-image {
+    margin: 40px 0px -14px 0px;
+}
+
+.insurance .pb_and_in-side-image img {
+    width: 170px;
+    height: 54px;
+}
+
+.insurance p {
+    margin: -10px 0px -10px 0px;
+}
+
+.insurance .pb_and_in-right img {
+    margin-top: 60px;
+    width: 433px;
+}
+
+/* all sections with image on right and information on left */
+.pm_and_pl {
+    display: flex;
+    height: 630px;
+    background-color: #f5f7fa;
+}
+
+/* Left div of sections */
+.pm_and_pl-left-div {
+    font-family: sans-serif;
+    margin-left: 10px;
+}
+
+/* Image of right div in sections */
+.pm_and_pl-left-div img {
+    margin-top: 80px;
+    width: 433px;
+}
+
+/* left divs of all information sections */
+.pm_and_pl-right-div {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+    width: 33vw;
+    margin-left: 150px;
+}
+
+/* div for image and para of left div of information seciton */
+.pm_and_pl-side-image {
+    margin: 80px 0px 45px 0px;
+    display: flex;
+}
+
+/* service-name with image */
+.pm_and_pl-side-image p {
+    margin: 20px 0px 0px 10px;
+    font-weight: 700;
+    width: 85px;
+}
+
+
+/* service logo on left div of sections */
+.pm_and_pl-side-image img {
+    height: 55px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* heading of left div of sections  */
+.pm_and_pl-heading h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+/* Intro paragraph of sections */
+.pm_and_pl-intro p {
+    width: 45vw;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+    line-height: 30px;
+}
+
+/* button on each section */
+.pm_and_pl-btn button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+    width: 255px;
+    background-color: black;
+    border-radius: 50px;
+    margin: 40px 0px 10px 0px;
+    color: white;
+    height: 44px;
+    font-size: 15px;
+}
+
+/* icons of download button */
+.pm_and_pl-btn img {
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+}
+
+.paytm-money {
+    background: url(https://assetscdn1.paytm.com/frontendcommonweb/69678bc5.png) no-repeat no-repeat center center/cover;
+    background-color: #f5f7fa;
+}
+
+.paytm-money .pm_and_pl-left-div img {
+    width: 472px;
+}
+
+.personal-loan .pm_and_pl-right-div {
+    margin-top: 48px;
+    margin-left: 205px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 46px;
+}
+
+.personal-loan .pm_and_pl-side-image img {
+    height: 55px;
+    width: 180px;
+}
+
+.personal-loan p {
+    width: 515px;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.personal-loan h1 {
+    margin-top: 48px;
+    width: 390px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.bus-serv {
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    padding-top: 112px;
+    padding-left: 5px;
+}
+
+.bus-serv h1 {
+    font-size: 48px;
+}
+
+.ap_and_isp {
+    height: 620px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f5f7fa;
+}
+
+/* left divs of all information sections */
+.ap_and_isp-left {
+    font-family: sans-serif;
+    width: 37vw;
+    margin: 180px 0px 0px 90px;
+    padding: 30px;
+}
+
+/* div for image and para of left div of information seciton */
+.ap_and_isp-side-image {
+    margin: 0px 0px 45px 0px;
+    display: flex;
+}
+
+/* service-name with image */
+.ap_and_isp-side-image p {
+    margin: 20px 0px 0px 10px;
+    font-weight: 700;
+    width: 85px;
+}
+
+
+/* service logo on left div of sections */
+.ap_and_isp-side-image img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+}
+
+/* heading of left div of sections  */
+.ap_and_isp-heading h1 {
+    font-size: 35px;
+    line-height: 45px;
+}
+
+/* Intro paragraph of sections */
+.ap_and_isp-intro p {
+    width: 450px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 25px;
+    line-height: 25px;
+}
+
+/* button on each section */
+.ap_and_isp-btn button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 45px;
+    width: 235px;
+    background-color: black;
+    border-radius: 50px;
+    margin-top: 30px;
+    color: white;
+    font-size: 15px;
+    padding: 14px;
+}
+
+/* icons of download button */
+.ap_and_isp-btn img {
+    height: 20px;
+    width: 20px;
+    filter: invert(100%);
+}
+
+/* Left div of sections */
+.ap_and_isp-right {
+    font-family: sans-serif;
+}
+
+/* Image of right div in sections */
+.ap_and_isp-right img {
+    width: 433px;
+    margin-top: 78px;
+    margin-right: 6px;
+}
+
+.ap_and_isp-gap {
+    height: 50px;
+    background-color: white;
+}
+
+.bus-tools {
+    height: 1800px;
+}
+
+.tools-heading {
+    font-size: 27px;
+    width: 500px;
+    margin-left: 5px;
+    margin-top: 165px;
+}
+
+.tool-container {
+    height: 490px;
+    display: flex;
+    margin-top: 85px;
+    margin-bottom: 300px;
+}
+
+.tool {
+    height: 400px;
+    width: 220px;
+    margin-right: 90px;
+}
+
+.tool img {
+    height: 220px;
+    width: 240px;
+}
+
+.tool h2 {
+    padding: 40px 0 40px 0px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.tool p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 244px;
+}
+
+.tool h4 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.pm_and_pt {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    margin-top: 130px;
+}
+
+
+.pm-pt-first-box {
+    width: 200px;
+    height: 230px;
+    margin-right: 40px;
+    margin-left: 60px;
+}
+
+.pm-pt-first-box img {
+    width: 150px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+}
+
+.pm-pt-first-box p {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.pm-pt-box {
+    border-radius: 10px;
+    background: rgba(0, 186, 240, 0.7);
+    padding: 5px 0;
+    text-align: center;
+    cursor: pointer;
+    width: 155px;
+    height: 230px;
+    min-width: 155px;
+    min-height: 230px;
+    margin-left: 10px;
+    color: white;
+}
+
+.pm-pt-box:hover {
+    background: #00baf2;
+}
+
+.pm-pt-box img {
+    border-radius: 10px;
+    transition: .3s;
+    width: 145px;
+    height: 158px;
+    opacity: 0.9;
+}
+
+.pm-pt-box img:hover {
+    scale: 1.08;
+    transition: 0.3s;
+}
+
+.travel .pm-pt-box img {
+    border-radius: 100%;
+    margin: 25px 60px 20px 0px;
+    width: 72px;
+    height: 72px;
+}
+
+.pm-pt-box h4 {
+    text-align: center;
+    font-size: 17px;
+}
+
+.travel .pm-pt-box h4 {
+    font-size: 17px;
+    text-align: start;
+    margin-left: 10px;
+    width: 120px;
+}
+
+.travel h6 {
+    font-size: 12px;
+    text-align: start;
+    margin-left: 10px;
+    line-height: 2;
+}
+
+.pm-pt-first-box h4 {
+    display: block;
+    padding-top: 5px;
+    font-size: 17px;
+    color: #00baf2;
+    font-weight: 500;
+}
+
+.pm-pt-first-box h4:hover {
+    cursor: pointer;
+    color: #082665;
+}
+
+hr {
+    margin: 40px;
+}
+
+footer {
+    height: 580px;
+    padding-top: 100px;
+    background-color: #f5f7fa;
+}
+
+.download {
+    display: flex;
+    height: 100px;
+    width: 700px;
+}
+
+.down-link {
+    height: 50px;
+    width: 150px;
+    color: white;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.download p {
+    width: 210px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.down-link img {
+    height: 52px;
+    width: 185px;
+}
+
+.down-link p {
+    font-size: 10px;
+}
+
+.end1 {
+    height: 11.8px;
+    background-color: #00baf2;
+}
+
+.end2 {
+    height: 11.8px;
+    background-color: rgb(0, 41, 112);
+}

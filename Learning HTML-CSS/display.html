@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display page</title>
+</head>
+
+<style>
+    *{
+        box-sizing: border-box;
+    }
+
+    header {
+        display: block;
+        margin: auto;
+        width:1100px;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        height: 50px;
+        width: 60px;
+    }
+
+    h2 {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h3{
+        text-align: center;
+    }
+
+    .container{
+        margin:auto;
+        width:1100px;
+    }
+
+    .boxClass{
+        display: inline-block;
+        border:none;
+        border-radius: 20px;
+        margin:auto;
+        width:33%;
+        background-color: rgb(224, 148, 188);
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    body{
+        background-color: rgb(18, 227, 255);
+    }
+
+    p{
+        line-height: 2px;
+        /* line height decides the sapce b/w lines or items */
+    }
+
+/*
+->by using display:inline-block, display of that box is remain box so we can center it and also it becomes inline so we can align them side by side
+
+->display:block can be centerd by margin:auto , so some elements like div, p, header, h1-h6 are default block bur others are not but we can make them by using display:block in their CSS
+
+->by using box-sizing:border-box, margin and padding of that box will not affect the width of that box 
+*/
+
+</style>
+
+<body>
+    <header>
+        <img src="images\img2.jpeg" alt="an image">
+        <h2>Welcome buddy</h2>
+    </header>
+    <div class="container">
+     <div class="boxClass">
+        <h3>heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur autem a nulla soluta repellat sit culpa obcaecati, eius accusantium omnis error! Voluptate tenetur non omnis veritatis nemo ipsa distinctio veniam? Minus blanditiis deleniti exercitationem, non, id consectetur ullam quos harum error quo esse quam sint!</p>
+     </div>
+     <div class="boxClass">
+        <h3>heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur autem a nulla soluta repellat sit culpa obcaecati, eius accusantium omnis error! Voluptate tenetur non omnis veritatis nemo ipsa distinctio veniam? Minus blanditiis deleniti exercitationem, non, id consectetur ullam quos harum error quo esse quam sint!</p>
+     </div>
+     <div class="boxClass">
+        <h3>heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur autem a nulla soluta repellat sit culpa obcaecati, eius accusantium omnis error! Voluptate tenetur non omnis veritatis nemo ipsa distinctio veniam? Minus blanditiis deleniti exercitationem, non, id consectetur ullam quos harum error quo esse quam sint!</p>
+     </div>
+    </div>
+
+</body>
+
+</html>

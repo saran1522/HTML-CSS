@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(26, 0, 90); */
+    background-image: radial-gradient(rgb(160, 255, 160), rgb(133, 253, 189));
+}
+
+.circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    position: absolute;
+
+}
+
+.one {
+    background-image: radial-gradient(rgb(104, 253, 104), rgb(255, 255, 255), white);
+    left: 300px;
+}
+
+.two {
+    background-image: repeating-radial-gradient(rgb(255, 126, 126), rgb(119, 119, 255), rgb(255, 255, 255));
+    background-image: repeating-radial-gradient(rgb(255, 126, 126), rgb(55, 0, 255), rgba(114, 153, 252, 0.382));
+}
+
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 1px; */
+  border: 1px solid;
+  background-image: radial-gradient(circle at 1% 28%, rgba(9, 46, 78, 0.408) -30%, rgb(1, 5, 71) 23%, rgb(4, 1, 45) 100%);
+  z-index: 1;
+}
+
+h1 {
+  color: rgb(204, 218, 249);
+  font-size: 4rem;
+  /* text-align: center; */
+  width: 40%;
+  /* border: 1px solid green; */
+  margin: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 3;
+}
+
+.container img {
+  height: 500px;
+  width: 500px;
+  z-index: 3;
+}
+
+.square {
+  height: 370px;
+  width: 370px;
+  border: 3px solid rgb(204, 218, 249);
+  rotate: 45deg;
+  position: absolute;
+  right: 120px;
+  z-index: 2;
+  opacity: .7;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position page</title>
+</head>
+
+<style>
+    .container{
+        background-color: rgb(9, 4, 154);
+        height: 1000px;
+    }
+
+    .box{
+        color: aliceblue;
+        display: inline-block;
+        border: 3px solid black;
+        height: 70px;
+        width: 80px;
+    }
+
+    #boxid1{
+        position: static;
+        /*positon of every box is by default static*/
+    }
+    
+    #boxid2{
+        position:absolute;
+        left:30px;
+        top:40px;
+        /* absolute: box will move according to it's 1st parents's position, means on increasing left, right, top, bottom it will not leave gap at it's original position  instead it will move according to the  position of it's parants's postion*/
+		/* absolute positoin works when the parant's position is relative*/
+    }
+    
+    #boxid3{
+     position: relative;
+     top:130px;
+     /* relative: box will move according to its original position, means its original positoin is 3rd in the row so on increasing left, right, top, bottom it will leave gap at it's original position and will move to that direciton*/
+    } 
+
+   #boxid5{
+    position:sticky;
+    top: 7px;
+    /* sticky: box will move to the top on scrolling but it will stop on the given top i.e 3px in this case*/
+   }
+
+   #boxid6{
+    position: fixed;
+    bottom: 9px;
+    right: 9px;
+    /*fixed: box will remain fixed at its given position*/
+   }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="boxid1">1st box</div>
+        <div class="box" id="boxid2">2nd box</div>
+        <div class="box" id="boxid3">3rd box</div>
+        <div class="box" id="boxid4">4th box</div>
+        <div class="box" id="boxid5">5th box</div>
+        <div class="box" id="boxid6">6th box</div>
+    </div>
+</body>
+</html>

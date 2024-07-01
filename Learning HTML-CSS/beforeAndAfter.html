@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://source.unsplash.com/collection/190727/1200x600');
+            /* we can apply random background-image by usign above link and dimension; */
+            font-family: 'Courgette', cursive;
+            font-weight: 20px;
+            z-index: -1;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+        }
+
+        header::before {
+            background: url('https://source.unsplash.com/collection/190722/1200x600');
+            content: "";
+            position: absolute;
+            z-index: -1;
+            opacity: 0.5;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            padding: 8px;
+        }
+
+        section {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        p {
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="headbar">
+        <ul class="list">
+            <li>Home</li>
+            <li>Sections</li>
+            <li>Services</li>
+            <li>About Us</li>
+        </ul>
+    </header>
+    <section>
+        <h1>Welcome To Our Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore numquam dolores praesentium alias vel
+            inventore sit a laudantium, ex unde, reiciendis impedit repellendus pariatur. Perferendis, placeat omnis
+            quae porro eum reprehenderit totam corporis molestiae ex esse aliquid! Harum illum hic ab at, tenetur,
+            cupiditate numquam quos odio consectetur in itaque. Assumenda ratione quod iure perspiciatis nesciunt?</p>
+    </section>
+</body>
+
+</html>

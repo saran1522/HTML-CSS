@@ -1,0 +1,28 @@
+.intro img{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+
+.intro p,h4{
+    position: relative;
+    top: -8px;
+    left: 5px;
+}
+
+.links img{
+    float:right;
+    height: 50px;
+    width: 50px;
+}
+
+.skills{
+    position: relative;
+    height: 600px;
+    width: 600px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    background: linear-gradient(to right top,
+            rgb(49, 255, 186), rgb(117, 230, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.glass {
+    height: 80vh;
+    width: 75vw;
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4));
+    border-radius: 20px;
+    z-index: 2;
+    backdrop-filter: blur(8px);
+    display: flex;
+}
+
+.circle1,
+.circle2 {
+    height: 180px;
+    width: 180px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.306));
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.circle1 {
+    top: 2%;
+    right: 14%;
+}
+
+.circle2 {
+    bottom: 2%;
+    left: 14%;
+}
+
+.dashboard {
+    height: 80vh;
+    width: 60vw;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.32));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.intro {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.intro img {
+    height: 75px;
+    width: 75px;
+}
+
+.links {
+    height: 20px;
+    width: 150px;
+}
+
+.links img {
+    float: left;
+    height: 28px;
+    width: 28px;
+    margin: -7px 10px 4px 20px;
+    border-radius: 50%;
+    filter: invert(84%) sepia(126%) saturate(271%) hue-rotate(96deg) brightness(99%) contrast(84%);
+}
+
+.links p {
+    font-weight: bolder;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(137, 137, 192, 0.798);
+}
+
+.skills {
+    text-align: center;
+    height: 100px;
+    width: 180px;
+    border-radius: 15px;
+    background: linear-gradient(to right top,
+            rgb(106, 255, 205), rgb(117, 255, 246));
+}
+
+.skills img {
+    height: 30px;
+    width: 30px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+
+.card {
+    height: 80px;
+    width: 400px;
+    margin-left: 50px;
+    position: relative;
+    top: 0px;
+}
+
+.card h2 {
+    font-size: 37px;
+    color: rgb(24, 24, 59);
+    opacity: 0.7;
+}
+
+.card .bar {
+    height: 12px;
+    width: 250px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9),
+            rgba(244, 244, 244, 0.672));
+    border-radius: 40px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+.box {
+    height: 100px;
+    width: 230px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background: linear-gradient(to top right, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.343));
+    border-radius: 10px;
+    box-shadow: 6px 6px 20px rgba(108, 114, 113, 0.282);
+}
+
+.box h4 {
+    position: relative;
+    top: 10px;
+}
+
+.box p {
+    position: relative;
+    top: 10px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.525);
+}
+
+.box img {
+    float: left;
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.box a {
+    color: rgb(34, 34, 63);
+    opacity: 0.7;
+}
+
+@media screen and (max-width:780px){
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+    }
+  .container{
+    margin: 0px;
+    padding: 0px;
+    /* border: 2px solid green; */
+    background: rgb(255, 4, 4);
+    overflow: hidden;
+    /* height: 100vh;
+    width: auto; */
+  }
+
+  .glass{
+    margin: 0px;
+    /* height: auto; */
+    /* width: auto; */
+  }
+  
+  .projects-container{
+    flex:4;
+  }
+
+  /* .box{
+    height: 80px;
+    width: 150px;
+    height: auto;
+    width: auto;
+  } */
+
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation and keyframe page</title>
+
+    <style>
+        .container {
+            margin: 0%;
+            padding: 0%;
+            background-color: black;
+        }
+
+/* we can animate(like going down coming up going left or right etc) our element or box using differnet animation properties */
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            position: relative;
+            /* animation: mymove 5s infinite; */
+            animation: mymove2 12s infinite;
+
+            /* These properties can be set using this shorthand */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+
+            /* we can have many other css animation properties which we can see on any online reference */
+        }
+
+        @keyframes mymove {
+            from {
+                width: 0px;
+            }
+
+            to {
+                width: 400px;
+            }
+        }
+
+        @keyframes mymove2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 200px;
+                left: 0px;
+            }
+
+            50% {
+                left: 200px;
+                top: 200px;
+            }
+
+            75% {
+                top: 0px;
+                left: 200px;
+            }
+
+            100% {
+                top: 0px;
+                right: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

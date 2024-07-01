@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform page</title>
+
+    <!-- transform means we can change the appearence of the element or box by using different transform properties -->
+    <style>
+        .container {
+            display: flex;
+            background-color: plum;
+            height: 80vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border: 2px solid gray;
+            transition: all 1s;
+        }
+
+        .box:hover {
+            /* transform: rotate(50deg); */
+            /*transform: scale(2); /* box size will increse 2x*/
+            /*transform: scale(2 3); /* box size will increse 2x from x axis and 3x from y axis*/
+            /* transform: skew(20deg, 20deg); */
+            transform: skewX(20deg);
+            /* transform: skewY(20deg); */
+            /* transform: skew(20deg, 20deg); */
+            /* transform: skew(20deg, 20deg); */
+
+            /* we can heve more properties which we can see on any online reference */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            this is the transformation of the box using different properties
+        </div>
+    </div>
+</body>
+
+</html>

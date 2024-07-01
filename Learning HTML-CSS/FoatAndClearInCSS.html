@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float and clear page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 500px;
+        border: 4px solid rgb(8, 12, 0);
+        margin: 30px auto;
+        /*y=30px x=auto*/
+        background-color: #9984e6;
+        /*auto will bring the whole div box to the center of  the page*/
+    }
+
+    .item {
+        color: aqua;
+        border: 4px solid rgb(4, 4, 81);
+        margin: 5px;
+        padding: 25px;
+        font-family: cursive;
+        background-color: #9c00ff;
+        overflow: auto;
+    }
+
+    #computer {
+        float: left;
+        width: 47%;
+    }
+
+    #mobile {
+        float: left;
+    }
+
+    #laptop {
+        float: right;
+        width: 47%;
+    }
+
+    #tablet {
+        clear: both;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div id="mobile" class="item">Lorem, mobile vala ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            maiores blanditiis unde eum dolor repellat officia explicabo assumenda praesentium impedit reiciendis
+            suscipit animi quaerat quidem, fuga aut quam eaque in. Dignissimos deleniti, cum labore error mollitia quis
+            temporibus veniam a.</div>
+        <div id="computer" class="item">Lorem, computer vala ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptates, maiores blanditiis unde eum dolor repellat officia explicabo assumenda praesentium impedit
+            reiciendis suscipit animi quaerat quidem, fuga aut quam eaque in. Dignissimos deleniti, cum labore error
+            mollitia quis temporibus veniam a.</div>
+        <div id="laptop" class="item">Lorem,laptop vala ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            maiores blanditiis unde eum dolor repellat officia explicabo assumenda praesentium impedit reiciendis
+            suscipit animi quaerat quidem, fuga aut quam eaque in. Dignissimos deleniti, cum labore error mollitia quis
+            temporibus veniam a.</div>
+        <div id="tablet" class="item">Lorem, tablet vala ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            maiores blanditiis unde eum dolor repellat officia explicabo assumenda praesentium impedit reiciendis
+            suscipit animi quaerat quidem, fuga aut quam eaque in. Dignissimos deleniti, cum labore error mollitia quis
+            temporibus veniam a.</div>
+    </div>
+</body>
+
+</html>

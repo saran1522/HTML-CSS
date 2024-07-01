@@ -1,0 +1,32 @@
+p{
+    color:rgb(56, 194, 222);
+    background-color: black;
+  }
+  /* so here p is selector , color is is property and rgb(any color) is value */
+
+
+#firstPara /*this is element selector*/
+{
+    color: blueviolet;
+}
+/* only element with firstPara id will accept this CSS */
+
+
+.BlueClass /*this is clas selector*/
+{
+  background-color: aquamarine;
+}
+/* all elements  with BlueClass will acccept this CSS */
+
+
+footer,span /*this is group selector*/
+{
+    background-color: rgb(207, 215, 40);
+}
+/* all footers and span will accept this CSS */
+
+*{ /* this is univeresal selector */
+  /* any css */
+  color:black;
+}
+/* all components will select this CSS  */

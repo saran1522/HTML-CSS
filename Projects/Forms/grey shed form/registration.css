@@ -1,0 +1,139 @@
+*{
+    margin: 0px;
+    /* padding: 0px; */
+}
+
+.form-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20201217/pngtree-colorful-gradient-geometric-sphere-background-image_510609.jpg) no-repeat center center/cover;
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20201210/pngtree-abstract-background-of-round-gradient-colorful-bubbles-image_506643.jpg) no-repeat center center/cover;
+    background: url(https://img.pikbest.com/backgrounds/20220119/colorful-gradient-transparent-bubbles-fresh-and-simple-background_6241635.jpg!bw700) no-repeat center center/cover;
+    background: url(https://freerangestock.com/sample/140364/abstract-background--purple-geometric-background.jpg) no-repeat center center/cover;
+    color: #8d99ae;
+    /* opacity: 0.6; */
+}
+
+.form-left{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 80%;
+    display: block;
+    margin: 20px;
+    padding: 20px;
+    background-color: #9e9e9e27;
+    /* background-color: #edeaeab5; */
+    border: 3px solid #f3f3f319;
+    box-shadow: 2px 2px 30px rgba(121, 121, 121, 0.72);
+    box-shadow: 2px 2px 20px rgba(222, 222, 222, 0.492);
+    backdrop-filter: blur(20%);
+    border-radius: 12px;
+}
+
+fieldset {
+    border: none;
+}
+
+
+.inp {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #003049;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 25px;
+    width: 95%;
+    font-size: large;
+}
+
+.date{
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+}
+input[type="date"]{
+    border: none;
+    outline: none;
+    width: 40%;
+    background: transparent;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none
+}
+
+.submit-btn{
+    background: transparent;
+    font-size: 1.3rem;
+    display: block;
+    margin: auto;
+    height: 40px;
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 6px;
+    color: rgb(0, 0, 0);
+}
+
+.submit-btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #003049;
+}
+
+h2 {
+    text-align: center;
+}
+
+.inpCol {
+    color: rgb(0, 0, 0);
+    color:#003049;
+    color:#ebf7fd;
+}
+
+input[type="file"] {
+    border: none;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+.txtarea {
+    color: rgb(0, 0, 0);
+    background: transparent;
+    box-sizing: border-box;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.form-right{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(207, 148, 255);
+    color: #1d3557;
+    color: #8d99ae;
+    color: #3d405b;
+}
+
+.form-img{
+    height: 80%;
+    width: 80%;
+    margin-top: 20%;
+}
+
+.form-right img{
+    height: 90%;
+    width: 90%;
+    transform: scaleX(-1);
+}

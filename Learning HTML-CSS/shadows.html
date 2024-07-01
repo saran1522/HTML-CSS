@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow and text shadow page</title>
+
+    <style>
+        .container{
+            display: flex;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            justify-content: center;
+             /* align-items: center;  */
+        }
+
+        .box{
+            width:300px;
+            border: 2px solid blue;
+            padding:6px;
+            margin:9px;
+            background-color: rgb(162, 225, 247);
+            border-radius: 20px;
+            /*box-shadow: 7px 7px rgb(74, 63, 230); /*right and botton*/
+            /*box-shadow: -7px 7px rgb(29, 13, 255);/*left and bottom*/
+            /*box-shadow: 7px -7px rgb(29, 13, 255);/*right and top*/
+            /*box-shadow: -7px -7px rgb(29, 13, 255);/*left and top*/
+            /*box-shadow: -7px -7px 105px rgb(29, 13, 255);
+            /*box-shadow: inset 7px 7px 66px 3px rgb(59, 62, 239); */
+            /* the third quantity is for blurry shadow and fourth for spreding the shadow around box*/
+            /* we can also apply different colored shadows and shadow inside the box like-*/
+            box-shadow: inset 7px 7px 70px 3px rgb(59, 62, 239), 11px 11px 30px rgb(255, 94, 207);
+
+        }
+
+        /* .box:hover{
+            margin: 10px 14px;
+            box-shadow: 0px 10px 15px grey;
+        } */
+
+        .box h3{
+            text-shadow: 3px 3px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>card 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, optio inventore dolore fugit doloremque, debitis iure reprehenderit quos eligendi provident officiis corrupti. Eius, iusto necessitatibus earum adipisci quaerat facilis! Ad ipsam provident labore quod alias deleniti cum quibusdam beatae libero!</p>
+        </div>
+        <div class="box">
+            <h3>card 2</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit deserunt, molestiae earum repellendus deleniti nobis quam. Facere vel est, minus, asperiores sint saepe quo nobis a facilis commodi iure sit beatae reiciendis. Tempore perspiciatis id deserunt a alias dicta dolorem.</p>
+        </div>
+        <div class="box">
+            <h3>card 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ea fuga explicabo dolore culpa officiis temporibus quis assumenda veniam quaerat quasi, obcaecati beatae blanditiis placeat iure molestiae, ipsa quia impedit repellat, modi rem vero ex? Distinctio dolore fugiat blanditiis expedita?</p>
+        </div>
+    </div>
+</body>
+</html>

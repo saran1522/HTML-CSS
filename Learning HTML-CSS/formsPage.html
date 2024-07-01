@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms page</title>
+</head>
+
+<body>
+    <h2>Form For Joining ISIS</h2>
+    <!-- Forms in html -->
+    <form>
+        <!--style="background-image: url(bgformm.jpg);"-->
+        <div>
+            <!--every div has it's seperate block to work with-->
+            Name: <input type="text" name="name" id="myName"
+                style="color: rgb(1, 23, 8); background-color: rgb(27, 195, 229);">
+            <!--id is used in for changes in this div through css-->
+        </div>
+        <br>
+        <div>
+            Phone: <input type="number" name="id" id="myNum">
+        </div>
+        <br>
+        <div>
+            Email: <input type="text" name="email" id="myMail">
+        </div>
+        <br>
+        <div>
+            DOB: <input type="date" name="date" id="myDate">
+        </div>
+        <br>
+        <div>
+            Aligibile or not?: <input type="checkbox" name="aligb" id="myAligb">
+        </div>
+        <br>
+        <div>
+            Gendre: male <input type="radio" name="Gender" id="myRadio"> female <input type="radio" name="Gender"
+                id="myRadio"> other <input type="radio" name="Gender" id="myRadio">
+        </div>
+        <br>
+        <div>
+            <!-- select tag gives the dropdown manue to select a option like country etc. -->
+            Country: <select name="cnt" id="country">
+                <option value="pak">Pakistan</option>
+                <option value="tali">Afghanistan</option>
+                <option value="afghan">Taliban</option>
+                <option value="irq">Iraque</option>
+                <option value="irn">Iran</option>
+            </select>
+        </div>
+        <div>
+            Feedback: <br><textarea name="feedback" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="Submit Now" id="mySubmit">
+            <input type="reset" name="Reset Now" id="myReset">
+        </div>
+        <br>
+    </form>
+</body>
+
+</html>

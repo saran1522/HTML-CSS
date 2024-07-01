@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is grid rows and gaps page</title>
+    <style>
+        .container{
+            display: grid;
+            background-color: rgb(0, 0, 0);
+            grid-template-columns: repeat(5,2fr);
+            grid-template-rows: repeat(5,2fr);
+        }
+
+        .box{
+            /* border: 2px solid black; */
+            /* border-radius: 6px; */
+            background-color: rgb(24, 3, 92);
+            color: white;
+            text-align: center;
+            box-shadow: 5px 5px white;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .box:first-child{
+            /*grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 3;*/
+            grid-column: 2/ span 3;
+            grid-row:1/span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">this is grid item 1</div>
+        <div class="box">this is grid item 2</div>
+        <div class="box">this is grid item 3</div>
+        <div class="box">this is grid item 4</div>
+        <div class="box">this is grid item 5</div>
+        <div class="box">this is grid item 6</div>
+        <div class="box">this is grid item 7</div>
+        <div class="box">this is grid item 8</div>
+        <div class="box">this is grid item 9</div>
+        <div class="box">this is grid item 10</div>
+        <div class="box">this is grid item 10</div>
+        <div class="box">this is grid item 10</div>
+    </div>
+</body>
+</html>

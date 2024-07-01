@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box page</title>
+
+    <!--
+reference-
+ flex-container - https://www.w3schools.com/css/css3_flexbox_container.asp 
+ flex-items- https://www.w3schools.com/css/css3_flexbox_items.asp
+-->
+
+    <style>
+        .container {
+            height: 400px;
+            width: 100%;
+            border: 3px solid tomato;
+            display: flex;
+            /*inintializing container as flex box*/
+            /* now the contianer is flex container and it's child boxes are flex items so we can apply flex properties; */
+
+            /* Flex properties for a flex container */
+
+            /* flex-direction: row; (Default value of flex-direction is row) */
+            /* flex-direction: column;
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column-reverse; */
+
+
+            /* flex-wrap: wrap; (Default value of flex-direction is no-wrap) */
+            /* flex-wrap: wrap-reverse; */
+            /* flex-wrap: nowrap; */
+
+            /* The two properties flex-direction and flex-wrap are used so often together that the shorthand property flex-flow was created to combine them. This shorthand property accepts the value of the two properties separated by a space.
+            /* flex-flow: row wrap */
+            /* flex-flow: row-reverse wrap; */
+            /* flex-flow: column wrap; */
+            /* flex-flow: column-reverse wrap; */
+            /* flex-flow: wrap-reverse; */
+
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; equal space exept the first and last items*/
+            /* justify-content: space-around; all items takes equal space at all the 4 directions of them */
+            /* justify-content: space-evenly; all items apart from each other at equal space*/
+
+            /* align-items will justify the content in vertical direction */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; */
+
+            /* ** if flex-direction is column than justify content works for vertical direction and align items works for horizontal direction; */
+
+            /* if we want to center any item (let say div) then we can do-
+            display: flex;
+            align-items:center; 
+            justify-content:center; */
+
+            /* align-content: flex-start; */
+            /* flex-start: Lines are packed at the top of the container. */
+            /* flex-end: Lines are packed at the bottom of the container. */
+            /* center: Lines are packed at the vertical center of the container.*/
+            /* space-between: Lines display with equal spacing between them. */
+            /* space-around: Lines display with equal spacing around them. */
+            /* stretch: Lines are stretched to fit the container. */
+
+            /* This can be confusing, but align-items determines the space between each item while align-content determines the spacing between lines(horizontal or verticla according to felx-dirction).When there is only one line, align-content has no effect */
+
+            /* flexbox froggy level24 solution
+               flex-flow: column-reverse wrap-reverse;
+               justify-content: center;
+               align-items: start;
+               align-content:space-between; */
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+
+        /* Flex properties for a flex item */
+        #item1 {
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            flex-grow: 2;
+            /*flex-shrink: 2; */
+
+        }
+
+        #item2 {
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+            flex-basis: 160px;
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+        }
+
+        #item3 {
+            /* flex: 2 2 230px; */
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="item1">this is item1</div>
+        <div class="box" id="item2">this is item2</div>
+        <div class="box" id="item3">this is item3</div>
+        <div class="box" id="item4">this is item4</div>
+        <div class="box" id="item5">this is item5</div>
+        <div class="box" id="item6">this is item6</div>
+    </div>
+    <div>
+        <a href="https://flexboxfroggy.com/">play this game to learn flex-box easily and deep</a>
+    </div>
+</body>
+
+</html>

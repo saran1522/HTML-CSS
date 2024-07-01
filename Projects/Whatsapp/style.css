@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.left{
+    height: 99vh;
+    overflow-y: scroll;
+    float: left;
+    width: 35vw;
+}
+
+.left-top{
+    background-color: white;
+    position:sticky;
+    top: 0px;
+}
+
+.user-info{
+    height: 12vh;
+    display: flex;
+    background-color: rgba(234, 238, 241, 0.899);
+}
+
+.user-dp{
+    width: 190px;
+    height: 45px;
+    margin: 8px 0px 0px 18px;
+}
+
+.user-dp img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.options{
+    width: 190px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    margin:8px 0px 0px 0px;
+}
+
+.op-img img{
+    height: 25px;
+    margin-top: 10px;
+    filter: invert(42%) saturate(237%) hue-rotate(122deg) brightness(97%) contrast(88%);
+    cursor: pointer;
+}
+
+.left .search{
+    height: 10vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar{
+    height: 7vh;
+    width: 32vw;
+    background-color: rgba(234, 238, 241, 0.899);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search-bar img{
+    height: 18px;
+    filter: invert(42%) saturate(237%) hue-rotate(122deg) brightness(97%) contrast(88%);
+}
+
+.search-bar input{
+    height: 6vh;
+    width: 320px;
+    background-color: rgba(234, 238, 241, 0.899);
+    border: none;
+    color: rgba(57, 54, 54, 0.688);
+}
+
+.right{
+    height: 99vh;
+    width: 65vw;
+}
+
+.contact{
+    height: 75px;
+    width: 34.5vw;
+    border-top: 1px solid rgba(14, 14, 14, 0.033);
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.105);
+}
+
+
+.cont-dp img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 12px;
+}
+
+.cont-info{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.cont-info p{
+    color: rgba(0, 0, 0, 0.489);
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.cont-info h4{
+    width: 250px;
+    font-weight: 400;
+}
+
+.cont-time{
+    color: rgba(0, 0, 0, 0.546);
+    font-size: 12px;
+    margin-top: 13px;
+    height: 20px;
+    float: right;
+}
+
+.right{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+
+.chat-info{
+    height: 12vh;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(234, 238, 241, 0.899);
+}
+
+.chat-img-name{
+    display: flex;
+    align-items: center;
+}
+
+.chat-img-name img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.chat-about{
+    width: 50vw;
+    height: 7vh;
+}
+
+.chat-desc{
+    font-size: 13px;
+    color: rgba(40, 39, 39, 0.746);
+    margin-top: 3px;
+}
+
+.chat-options{
+    display: flex;
+}
+
+.chat-options img{
+    height: 25px;
+    width: 25px;
+    filter: invert(42%) saturate(237%) hue-rotate(122deg) brightness(97%) contrast(88%);
+    margin: 15px;
+    cursor: pointer;
+}
+
+.chat::before{
+    position: relative;
+    display: block;
+    content: "";
+    height: 88vh;
+    background: url(https://mcdn.wallpapersafari.com/medium/27/32/jt4AoG.jpg) no-repeat no-repeat center center/cover;
+    z-index: -1;
+    opacity:0.8;
+}
+
+.chat{
+    height: 88vh;
+}
+
+.right-footer{
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(234, 238, 241, 0.899);
+}
+
+.right-footer img{
+    height: 30px;
+    cursor: pointer;
+    filter: invert(42%) saturate(237%) hue-rotate(122deg) brightness(97%) contrast(88%);
+}
+
+.attachment{
+    width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.message{
+    width: 600px;
+    height: 40px;
+}
+
+.message input{
+    width: 600px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    padding: 12px;
+    color: rgb(85, 85, 85);
+}
+
+input:focus{
+    outline: none;
+}
+
+.mic{
+    width: 40px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model page</title>
+</head>
+<!--
+ _______________________________
+|  __________margin___________  | 
+| |  ________border_________  | | 
+| | |  ______padding______  | | | 
+| | | |______element______| | | | 
+| | |________padding________| | | 
+| |__________border___________| | 
+|____________margin_____________|
+ 
+-->
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<body>
+    <h2 style="text-align: center; font-family: Geneva, Tahoma, sans-serif;">CSS box model Testing</h2>
+    <a href="https://www.simplilearn.com/ice9/free_resources_article_thumb/CSS-Box-Model.png" target="_blank"> CSS box
+        model </a>
+    <style>
+        .mainClass {
+            color: aqua;
+            background-color: rgb(1 1 21);
+            border: 4px solid rgb(97, 193, 241);
+            padding: 25px;
+            /*padding-left: 39px;*/
+            margin: 40px auto;
+            border-radius: 20px;
+            width: 350px;
+            /*height: 300px;*/
+            box-sizing: border-box;
+            /*if we dont use box size then box will increse its width on increasing margin, padding etc*/
+            /* we can also write in one line as-
+            padding: 38px 40px 39px 39px; sequence- top right bottom left */
+            /* we can set left, right, top, bottom etc's padding, border, marging, radius seperatly */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .divClass {
+            width: 600px;
+            margin: 30px auto;
+            background-color: #9be7e6;
+            border: 4px solid gray;
+        }
+    </style>
+    <div class="divClass">
+        <div class="mainClass">
+            <h3>Box model in CSS</h3>
+            <p id="firstpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum commodi, magni veniam
+                voluptates et provident fuga iste id qui repudiandae cumque similique! Iusto sit accusamus facilis
+                eveniet, expedita commodi? Quae nam vero corporis similique voluptatem iste! Id modi laboriosam autem.
+            </p>
+        </div>
+        <div class="mainClass">
+            <h3>Box model in CSS</h3>
+            <p id="firstpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum commodi, magni veniam
+                voluptates et provident fuga iste id qui repudiandae cumque similique! Iusto sit accusamus facilis
+                eveniet, expedita commodi? Quae nam vero corporis similique voluptatem iste! Id modi laboriosam autem.
+            </p>
+        </div>
+        <div class="mainClass">
+            <h3>Box model in CSS</h3>
+            <p id="firstpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum commodi, magni veniam
+                voluptates et provident fuga iste id qui repudiandae cumque similique! Iusto sit accusamus facilis
+                eveniet, expedita commodi? Quae nam vero corporis similique voluptatem iste! Id modi laboriosam autem.
+            </p>
+        </div>
+        <div class="mainClass">
+            <h3>Box model in CSS</h3>
+            <p id="firstpara">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum commodi, magni veniam
+                voluptates et provident fuga iste id qui repudiandae cumque similique! Iusto sit accusamus facilis
+                eveniet, expedita commodi? Quae nam vero corporis similique voluptatem iste! Id modi laboriosam autem.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
